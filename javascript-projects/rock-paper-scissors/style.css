@@ -11,17 +11,17 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	min-height: 100vh;
-	background-color: #121212;
-	color: #f0f0f0;
+	background-color: #1a1a2e; /* Darker navy blue background */
+	color: #e0e0e0;
 	padding: 10px;
 }
 
 header {
 	padding: 20px 0;
 	font-size: 1.8rem;
-	color: #ffcc00;
+	color: #f3a712; /* Warm orange color */
 	font-weight: bold;
-	text-shadow: 0 0 5px #ffcc00;
+	text-shadow: 0 0 5px #f3a712;
 }
 
 main {
@@ -38,7 +38,7 @@ main {
 	font-size: 1rem;
 	display: block;
 	margin-bottom: 25px;
-	color: #ffcc00;
+	color: #f3a712;
 }
 
 .start input {
@@ -47,10 +47,10 @@ main {
 	width: 60%;
 	max-width: 200px;
 	margin-bottom: 10px;
-	border: 1px solid #ffcc00;
+	border: 1px solid #f3a712;
 	border-radius: 4px;
-	background-color: #2a2a2a;
-	color: #f0f0f0;
+	background-color: #22254b; /* Dark blue-gray input background */
+	color: #e0e0e0;
 }
 
 .input {
@@ -64,15 +64,15 @@ main {
 	padding: 10px 20px;
 	font-size: 1rem;
 	border: none;
-	background-color: #ffcc00;
-	color: black;
+	background-color: #f3a712;
+	color: #1a1a2e; /* Darker background for contrast */
 	border-radius: 50px;
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .--btn:hover {
-	background-color: #ffd700;
+	background-color: #e89c1a; /* Lighter orange on hover */
 }
 
 .playarea {
@@ -91,29 +91,29 @@ main {
 	height: 100px;
 	padding: 15px 25px;
 	font-size: 1rem;
-	border: 1px solid #ffcc00;
+	border: 1px solid #f3a712;
 	border-radius: 50px;
 	cursor: pointer;
-	background-color: #2a2a2a;
-	color: #ffcc00;
+	background-color: #22254b;
+	color: #f3a712;
 	transition: all 0.3s;
 }
 
 .choice:hover {
-	background-color: #a584004f;
-	color: black;
+	background-color: #fae1c5; /* Light tan color on hover */
+	color: #1a1a2e;
 }
 
 .icon {
 	font-size: 50px;
-	color: #ffcc00;
+	color: #f3a712;
 }
 
 .result {
 	display: none;
 	margin: 20px 0;
 	font-size: 1.2rem;
-	color: #ffcc00;
+	color: #f3a712;
 }
 
 .result h2 {
@@ -132,7 +132,7 @@ main {
 footer {
 	padding: 20px 0;
 	font-size: 0.9rem;
-	color: #aaa;
+	color: #777; /* Lighter footer text */
 }
 
 @media (max-width: 768px) {
