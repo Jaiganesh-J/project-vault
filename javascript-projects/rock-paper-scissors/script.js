@@ -1,7 +1,7 @@
 let humanScore = 0;
 let computerScore = 0;
 let rounds;
-let currentRound = 1;
+let currentRound = 0;
 const buttonStart = document.getElementById("startButton");
 const startSection = document.querySelector(".start");
 const playAreaSection = document.querySelector(".playarea");
@@ -47,7 +47,6 @@ buttonStart.addEventListener("click", () => {
 	playAreaSection.style.display = "block";
 	roundNumber.textContent = `Best of ${rounds}`;
 	scoreSection.style.display = "block";
-	updateRoundNumber();
 });
 
 buttonRock.addEventListener("click", () => handleClick("rock"));
@@ -55,7 +54,7 @@ buttonPaper.addEventListener("click", () => handleClick("paper"));
 buttonScissors.addEventListener("click", () => handleClick("scissors"));
 
 function handleClick(playerChoice) {
-	if (currentRound <= rounds) {
+	if (currentRound < rounds) {
 		const computerInput = getComputerChoice();
 		playRound(computerInput, playerChoice);
 		humanPoints.textContent = humanScore;
@@ -63,14 +62,13 @@ function handleClick(playerChoice) {
 		currentRound++;
 		updateRoundNumber();
 	}
+	if (currentRound == rounds) {
+		endGame();
+	}
 }
 
 function updateRoundNumber() {
-	if (currentRound > rounds) {
-		endGame();
-	} else {
-		roundNumber.textContent = `Round ${currentRound}`;
-	}
+	roundNumber.textContent = `Round ${currentRound}`;
 }
 
 function endGame() {
@@ -94,7 +92,7 @@ function endGame() {
 function resetGame(playAgainButton) {
 	humanScore = 0;
 	computerScore = 0;
-	currentRound = 1;
+	currentRound = 0;
 
 	humanPoints.textContent = humanScore;
 	computerPoints.textContent = computerScore;
