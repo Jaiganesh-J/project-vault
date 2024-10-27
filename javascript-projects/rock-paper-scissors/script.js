@@ -56,8 +56,10 @@ playGame();
 const buttonStart = document.getElementById("startButton");
 const startSection = document.querySelector(".start");
 const playAreaSection = document.querySelector(".playarea");
+const roundNumber = document.querySelector(".gameName");
 
 buttonStart.addEventListener("click", () => {
 	startSection.style.display = "none";
 	playAreaSection.style.display = "block";
+	roundNumber.textContent = "Round";
 });
