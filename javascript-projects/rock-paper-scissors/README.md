@@ -30,13 +30,21 @@ Welcome to the Rock Paper Scissors game! This is a simple web-based game where y
 
 ### File Structure
 
-javascript-projects
-rock-paper-scissors
-├── Favicon
-├── index.html
-├── script.js
-├── style.css
-└── README.md
+```
+javascript-projects/
+└── rock-paper-scissors/
+    ├── Favicon/
+    ├── index.html
+    ├── script.js
+    ├── style.css
+    ├── site.webmanifest
+    ├── README.md
+    └── Screenshots/
+        ├── Screenshot_1.png
+        ├── Screenshot_2.png
+        └── Screenshot_3.png
+
+```
 
 ## How to Play
 
@@ -54,6 +62,14 @@ rock-paper-scissors
 
 ## Screenshots
 
-1. ![Game Screenshot 1](/project-vault/javascript-projects/rock-paper-scissors/Screenshots/Screenshot_1.png)
-2. ![Game Screenshot 2](/project-vault/javascript-projects/rock-paper-scissors/Screenshots/Screenshot_2.png)
-3. ![Game Screenshot 3](/project-vault/javascript-projects/rock-paper-scissors/Screenshots/Screenshot_3.png)
+### Game Screenshot 1
+
+![Game Screenshot 1](./Screenshots/Screenshot_1.png)
+
+### Game Screenshot 2
+
+![Game Screenshot 2](./Screenshots/Screenshot_2.png)
+
+### Game Screenshot 3
+
+![Game Screenshot 3](./Screenshots/Screenshot_3.png)
