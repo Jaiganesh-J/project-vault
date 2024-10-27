@@ -124,6 +124,11 @@ main {
 	margin: 5px 0;
 }
 
+.score {
+	margin: 10px;
+	padding: 10px;
+}
+
 footer {
 	padding: 20px 0;
 	font-size: 0.9rem;

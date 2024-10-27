@@ -56,6 +56,7 @@ playGame();
 const buttonStart = document.getElementById("startButton");
 const startSection = document.querySelector(".start");
 const playAreaSection = document.querySelector(".playarea");
+const scoreSection = document.querySelector(".result");
 const roundNumber = document.querySelector(".gameName");
 const buttonRock = document.querySelector(".choice rock");
 const buttonPaper = document.querySelector(".choice paper");
@@ -65,4 +66,5 @@ buttonStart.addEventListener("click", () => {
 	startSection.style.display = "none";
 	playAreaSection.style.display = "block";
 	roundNumber.textContent = "Round";
+	scoreSection.style.display = "block";
 });
