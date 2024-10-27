@@ -41,14 +41,23 @@ function playRound(computerChoice, humanChoice) {
 }
 playGame();
 
-if (humanScore > computerScore) {
-	console.log(
-		`Congratulations, You are the overall winner. You won ${humanScore} out of ${rounds} games`
-	);
-} else if (humanScore === computerScore) {
-	console.log(
-		`Both of you won ${humanScore} out of ${rounds} games. You can do better!`
-	);
-} else {
-	console.log("You lost. Better luck next time!");
-}
+// if (humanScore > computerScore) {
+// 	console.log(
+// 		`Congratulations, You are the overall winner. You won ${humanScore} out of ${rounds} games`
+// 	);
+// } else if (humanScore === computerScore) {
+// 	console.log(
+// 		`Both of you won ${humanScore} out of ${rounds} games. You can do better!`
+// 	);
+// } else {
+// 	console.log("You lost. Better luck next time!");
+// }
+
+const buttonStart = document.getElementById("startButton");
+const startSection = document.querySelector(".start");
+const playAreaSection = document.querySelector(".playarea");
+
+buttonStart.addEventListener("click", () => {
+	startSection.style.display = "none";
+	playAreaSection.style.display = "block";
+});
