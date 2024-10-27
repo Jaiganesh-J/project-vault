@@ -11,7 +11,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	min-height: 100vh;
-	background-color: #1a1a2e; /* Darker navy blue background */
+	background-color: #1a1a2e;
 	color: #e0e0e0;
 	padding: 10px;
 }
@@ -19,7 +19,7 @@ body {
 header {
 	padding: 20px 0;
 	font-size: 1.8rem;
-	color: #f3a712; /* Warm orange color */
+	color: #f3a712;
 	font-weight: bold;
 	text-shadow: 0 0 5px #f3a712;
 }
@@ -49,7 +49,7 @@ main {
 	margin-bottom: 10px;
 	border: 1px solid #f3a712;
 	border-radius: 4px;
-	background-color: #22254b; /* Dark blue-gray input background */
+	background-color: #22254b;
 	color: #e0e0e0;
 }
 
@@ -65,14 +65,14 @@ main {
 	font-size: 1rem;
 	border: none;
 	background-color: #f3a712;
-	color: #1a1a2e; /* Darker background for contrast */
+	color: #1a1a2e;
 	border-radius: 50px;
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .--btn:hover {
-	background-color: #e89c1a; /* Lighter orange on hover */
+	background-color: #e89c1a;
 }
 
 .playarea {
@@ -100,7 +100,7 @@ main {
 }
 
 .choice:hover {
-	background-color: #fae1c5; /* Light tan color on hover */
+	background-color: #fae1c5;
 	color: #1a1a2e;
 }
 
@@ -132,7 +132,7 @@ main {
 footer {
 	padding: 20px 0;
 	font-size: 0.9rem;
-	color: #777; /* Lighter footer text */
+	color: #777;
 }
 
 @media (max-width: 768px) {

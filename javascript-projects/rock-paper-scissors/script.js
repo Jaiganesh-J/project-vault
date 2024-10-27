@@ -8,6 +8,7 @@ const playAreaSection = document.querySelector(".playarea");
 const scoreSection = document.querySelector(".result");
 const resultMessage = document.getElementById("resultMessage");
 const roundNumber = document.querySelector(".gameName");
+let textValue = document.getElementById("total-rounds");
 const buttonRock = document.querySelector(".choice.rock");
 const buttonPaper = document.querySelector(".choice.paper");
 const buttonScissors = document.querySelector(".choice.scissors");
@@ -40,7 +41,11 @@ function playRound(computerChoice, humanChoice) {
 	}
 	resultMessage.textContent = message;
 }
-
+textValue.addEventListener("keypress", function (event) {
+	if (event.key === "Enter") {
+		buttonStart.click();
+	}
+});
 buttonStart.addEventListener("click", () => {
 	rounds = parseInt(document.getElementById("total-rounds").value);
 	startSection.style.display = "none";
@@ -101,6 +106,7 @@ function resetGame(playAgainButton) {
 	startSection.style.display = "block";
 	playAreaSection.style.display = "none";
 	scoreSection.style.display = "none";
+	textValue.value = "";
 
 	playAgainButton.remove();
 }
