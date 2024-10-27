@@ -57,6 +57,9 @@ const buttonStart = document.getElementById("startButton");
 const startSection = document.querySelector(".start");
 const playAreaSection = document.querySelector(".playarea");
 const roundNumber = document.querySelector(".gameName");
+const buttonRock = document.querySelector(".choice rock");
+const buttonPaper = document.querySelector(".choice paper");
+const buttonScissors = document.querySelector(".choice scissors");
 
 buttonStart.addEventListener("click", () => {
 	startSection.style.display = "none";
