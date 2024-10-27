@@ -3,9 +3,44 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Rock Paper Scissors Game</title>
 		<link rel="stylesheet" href="style.css" />
 		<script type="text/javascript" src="script.js"></script>
 	</head>
-	<body></body>
+	<body>
+		<header class="game-name">
+			<h1>Rock Paper Scissors</h1>
+		</header>
+		<main>
+			<section class="start">
+				<label for="rounds"
+					>How many rounds do you want to play the game? (Best of ___)</label
+				>
+				<input
+					type="text"
+					id="rounds"
+					name="rounds"
+					placeholder="Enter a number below 10"
+				/>
+				<button id="startButton" class="--btn">Start Play</button>
+			</section>
+
+			<section class="playarea">
+				<div class="choices">
+					<button class="choice rock">Rock</button>
+					<button class="choice paper">Paper</button>
+					<button class="choice scissors">Scissors</button>
+				</div>
+			</section>
+
+			<section class="result">
+				<div>
+					<h2>Score</h2>
+					<p>You: <span id="userScore">0</span></p>
+					<p>Computer: <span id="computerScore">0</span></p>
+				</div>
+			</section>
+		</main>
+		<footer>&copy; 2024 Created by Jaiganesh</footer>
+	</body>
 </html>
