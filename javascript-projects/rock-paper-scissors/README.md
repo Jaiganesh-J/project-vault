@@ -8,7 +8,7 @@ Welcome to the Rock Paper Scissors game! This is a simple web-based game where y
 - [Getting Started](#getting-started)
 - [How to Play](#how-to-play)
 - [Technologies Used](#technologies-used)
-- [Credits](#credits)
+- [Screenshots](#screenshots)
 
 ## Features
 
