@@ -4,6 +4,7 @@ let rounds;
 let currentRound = 0;
 const buttonStart = document.getElementById("startButton");
 const startSection = document.querySelector(".start");
+const errorMessage = document.querySelector(".error-message");
 const playAreaSection = document.querySelector(".playarea");
 const scoreSection = document.querySelector(".result");
 const resultMessage = document.getElementById("resultMessage");
@@ -48,6 +49,14 @@ textValue.addEventListener("keypress", function (event) {
 });
 buttonStart.addEventListener("click", () => {
 	rounds = parseInt(document.getElementById("total-rounds").value);
+	errorMessage.textContent = "";
+
+	if (isNaN(rounds) || rounds <= 0 || rounds > 10) {
+		errorMessage.textContent =
+			"Please enter a valid number of rounds (between 1 and 10).";
+		errorMessage.style.color = "red";
+		return;
+	}
 	startSection.style.display = "none";
 	playAreaSection.style.display = "block";
 	roundNumber.textContent = `Best of ${rounds}`;
