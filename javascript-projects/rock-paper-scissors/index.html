@@ -13,44 +13,46 @@
 		/>
 	</head>
 	<body>
-		<header class="game-name">
-			<h1 class="gameName">Rock Paper Scissors</h1>
-		</header>
-		<main>
-			<section class="start">
-				<label for="rounds"
-					>How many rounds do you want to play the game? (Best of ___)</label
-				>
-				<div class="input">
-					<input
-						type="text"
-						id="total-rounds"
-						name="rounds"
-						placeholder="Enter a number below 10"
-						autocomplete="off"
-					/>
-					<button id="startButton" class="--btn">Start Play</button>
-				</div>
-			</section>
-			<section class="result">
-				<div class="score">
-					<h2>Score</h2>
-					<p>You: <span id="userScore">0</span></p>
-					<p>Computer: <span id="computerScore">0</span></p>
-					<p id="resultMessage">Make your move!</p>
-				</div>
-			</section>
-			<section class="playarea">
-				<div class="choices">
-					<button class="choice rock">
-						<div class="icon">✊</div>
-					</button>
-					<button class="choice paper"><div class="icon">✋</div></button>
-					<button class="choice scissors"><div class="icon">✌</div></button>
-				</div>
-			</section>
-		</main>
-		<footer>&copy; 2024 Created by Jaiganesh</footer>
+		<div class="card">
+			<header class="game-name">
+				<h1 class="gameName">Rock Paper Scissors</h1>
+			</header>
+			<main>
+				<section class="start">
+					<label for="rounds"
+						>How many rounds do you want to play the game? (Best of ___)</label
+					>
+					<div class="input">
+						<input
+							type="text"
+							id="total-rounds"
+							name="rounds"
+							placeholder="Enter a number below 10"
+							autocomplete="off"
+						/>
+						<button id="startButton" class="--btn">Start Play</button>
+					</div>
+				</section>
+				<section class="result">
+					<div class="score">
+						<h2>Score</h2>
+						<p>You: <span id="userScore">0</span></p>
+						<p>Computer: <span id="computerScore">0</span></p>
+						<p id="resultMessage">Make your move!</p>
+					</div>
+				</section>
+				<section class="playarea">
+					<div class="choices">
+						<button class="choice rock">
+							<div class="icon">✊</div>
+						</button>
+						<button class="choice paper"><div class="icon">✋</div></button>
+						<button class="choice scissors"><div class="icon">✌</div></button>
+					</div>
+				</section>
+			</main>
+			<footer>&copy; 2024 Created by Jaiganesh</footer>
+		</div>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
