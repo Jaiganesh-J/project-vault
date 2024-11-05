@@ -2,6 +2,11 @@
 
 Welcome to the Rock Paper Scissors game! This is a simple web-based game where you can challenge the computer in a classic game of Rock, Paper, Scissors.
 
+## Live Demo
+
+[Play the Game](https://play-rock-paper-and-scissors.netlify.app/)
+
+
 ## Table of Contents
 
 - [Features](#features)
