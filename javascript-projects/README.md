@@ -4,6 +4,6 @@ This folder contains various JavaScript projects that demonstrate different conc
 
 ## Projects
 
-1. **Rock paper scissors**
+1. **Rock-Paper-Scissors**
    - **Description:** A simple web-based game that allows users to play Rock-Paper-Scissors against the computer. The game features an interactive interface where users can select their choice and see the result instantly.
    - **Live Demo:** [Play Rock-Paper-Scissors](https://play-rock-paper-and-scissors.netlify.app/)
